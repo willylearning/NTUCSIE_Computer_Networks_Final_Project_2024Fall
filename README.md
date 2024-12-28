@@ -1,4 +1,4 @@
-# NTUCSIE Computer Networks Socket Programming Project
+# NTUCSIE Computer Networks Socket Programming Project 2024 Fall
 ## Overview
 The project is a real-time online chatroom application that allows users to communicate through various media types, including text, files, and live video streaming. The system is designed to support seamless and secure communication in both private and public chat modes. Check CSIE3510 Socket Programming Project.pdf for knowing the details.
 
