@@ -1,29 +1,33 @@
-how to compile:
+# NTUCSIE Computer Networks Socket Programming Project
+## Overview
+The project is a real-time online chatroom application that allows users to communicate through various media types, including text, files, and live video streaming. The system is designed to support seamless and secure communication in both private and public chat modes. Check CSIE3510 Socket Programming Project.pdf for knowing the details.
+
+## How to compile:
 make
 
-how to run:
+## How to run:
 ./server
 ./client
 
-how to clean:
+## How to clean:
 make clean
 
-openssl:
+## Set openssl:
 openssl genrsa -out server.key 2048
 openssl req -new -key server.key -out server.csr
 openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 
-chatting command: (using relay mode)
+## Chatting command: (using relay mode)
 If user kevin wants to send "hello" to user james => send kevin james hello
 user james wants to see who sends messages to him => check msg
 user james should receive "Message from kevin: hello"
 
-sending file command: (using relay mode)
+## Sending file command: (using relay mode)
 If user kevin wants to send "apple.jpg" to user james => file kevin james apple.jpg
 user james wants to see who sends messages to him => check msg
 user james should receive "File from kevin: apple.jpg", and james should see a received_apple.jpg in his folder
 
-streaming command: (using relay mode)
+## Streaming command: (using relay mode)
 If user james wants to listen to someone streaming to him => check streaming
 Meanwhile, if user kevin wants to stream "s10.wav" to user james => streaming kevin james s10.wav
 Then after user kevin types the command, user james will hear streaming of s10.wav
