@@ -13,18 +13,18 @@ make
 make clean
 
 ## Set openssl:
-openssl genrsa -out server.key 2048
-openssl req -new -key server.key -out server.csr
+openssl genrsa -out server.key 2048  
+openssl req -new -key server.key -out server.csr  
 openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 
 ## Chatting command: (using relay mode)
-If user kevin wants to send "hello" to user james => send kevin james hello
-user james wants to see who sends messages to him => check msg
+If user kevin wants to send "hello" to user james => send kevin james hello  
+user james wants to see who sends messages to him => check msg  
 user james should receive "Message from kevin: hello"
 
 ## Sending file command: (using relay mode)
-If user kevin wants to send "apple.jpg" to user james => file kevin james apple.jpg
-user james wants to see who sends messages to him => check msg
+If user kevin wants to send "apple.jpg" to user james => file kevin james apple.jpg  
+user james wants to see who sends messages to him => check msg  
 user james should receive "File from kevin: apple.jpg", and james should see a received_apple.jpg in his folder
 
 ## Streaming command: (using relay mode)
