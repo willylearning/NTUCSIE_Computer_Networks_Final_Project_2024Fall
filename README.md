@@ -28,6 +28,6 @@ user james wants to see who sends messages to him => check msg
 user james should receive "File from kevin: apple.jpg", and james should see a received_apple.jpg in his folder
 
 ## Streaming command: (using relay mode)
-If user james wants to listen to someone streaming to him => check streaming
-Meanwhile, if user kevin wants to stream "s10.wav" to user james => streaming kevin james s10.wav
+If user james wants to listen to someone streaming to him => check streaming  
+Meanwhile, if user kevin wants to stream "s10.wav" to user james => streaming kevin james s10.wav  
 Then after user kevin types the command, user james will hear streaming of s10.wav
